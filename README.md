@@ -6,6 +6,7 @@ python > 3.5
 git clone https://github.com/BUEC500C1/video-827265717.git
 pip3 -r requirements.txt
 ```
+Then modify the key value with your own key in the key.txt file.
 
 ## Task1 FFmpeg
 - Estimate the maximum number of programs the system can maintain
