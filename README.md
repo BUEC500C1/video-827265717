@@ -18,7 +18,9 @@ Then modify the key value with your own key in the key.txt file.
 ## Task1
 - Estimate the processing power need to execute such operations on your computer
 - Estimate the maximum number of such operations that can run on your system
-- Utilize FFmpeg to re-encode a video file in MOV or MP4 format
+- Use FFmpeg to re-encode a video file (MOV, or MP4) to two bitrates:
+    -- 720p at 2Mbps and 30fps
+    -- 480p at 1Mbps and 30fps
 
 ## Task2
 - Develop a queue system that can exercise your requirements with stub functions.
