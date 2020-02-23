@@ -3,7 +3,7 @@
 python > 3.5
 
 ```bash
-git clone https://github.com/BUEC500C1/video-827265717
+git clone https://github.com/BUEC500C1/video-827265717.git
 pip3 -r requirements.txt
 ```
 
