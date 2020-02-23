@@ -13,18 +13,15 @@ def tweepy_get(keyword):
 	api = tweepy.API(auth)
 
 	search_results = api.user_timeline(keyword)
-
 	num = 0
 	highpoints = re.compile(u'[\uD800-\uDBFF][\uDC00-\uDFFF]')
 	for tweet in search_results:
 		gap = '\n'
 		tweet_list = list(tweet.text)
-
 		list_num = 0
 		for i in range(len(tweet_list)):
 			if (i % 50) == 0:
 				tweet_list.insert(i,gap)
-		# tweet_list.insert(55, gap)
 		tweet.text = ''.join(tweet_list)
 		print(tweet.text)
 
