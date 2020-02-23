@@ -21,7 +21,7 @@ Then modify the key value with your own key in the key.txt file.
 - Utilize FFmpeg to re-encode a video file in MOV or MP4 format
 
 ## Task2
-- Develop a queue system to support designed functions
-- Develop the twitter API
-- Integrate twiiter API with the designed functional system
+- Develop a queue system that can exercise your requirements with stub functions.
+- Develop the twitter functionality with an API
+- Integrate them
 
