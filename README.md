@@ -11,6 +11,7 @@ Then modify the key value with your own key in the key.txt file.
 ## Task1
 - Estimate the processing power need to execute such operations on your computer
 - Estimate the maximum number of such operations that can run on your system
+- Utilize FFmpeg to re-encode a video file in MOV or MP4 format
 
 ## Task2
 - Develop a queue system to support designed functions
