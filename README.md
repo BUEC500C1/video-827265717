@@ -8,8 +8,11 @@ pip3 -r requirements.txt
 ```
 Then modify the key value with your own key in the key.txt file.
 
-## Task1 FFmpeg
-- Estimate the maximum number of programs the system can maintain
+## Task1
+- Estimate the processing power need to execute such operations on your computer
+- Estimate the maximum number of such operations that can run on your system
+
+## Task2
 - Develop a queue system to support designed functions
 - Develop the twitter API
 - Integrate twiiter API with the designed functional system
