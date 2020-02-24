@@ -16,7 +16,7 @@ def queue_1(keyNames, number_thread):
       tweepy_get(item)
       image_to_video(item)
       i += 1
-      print("---------------Thread Done--------------")
+      print("==================Thread Done==================")
       q.task_done()
 
   q = queue.Queue()
