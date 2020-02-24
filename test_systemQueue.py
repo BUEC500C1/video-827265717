@@ -1,6 +1,6 @@
-from tweepy_get import tweepy_get
+from tweepy import tweepy_get
 from image2video import image_to_video
-from queue_sys import queue_1
+from systemQueue import queue_1
 import multiprocessing
 import time
 import threading
