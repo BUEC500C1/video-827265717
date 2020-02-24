@@ -1,5 +1,6 @@
 import tweepy
 import re
+from PIL import Image, ImageDraw, ImageFont
 import os
 import os.path
 import configparser
