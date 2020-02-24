@@ -1,16 +1,12 @@
-import os
-import cv2
-import numpy as np
+import subprocess
 
-def image_to_video(keyword):
-	path = 'img/'
-	filelist = os.listdir(path)
-	fps = 1/3
-	size = (1200, 630)
-	video = cv2.VideoWriter(keyword + ".avi", cv2.VideoWriter_fourcc('I', '4', '2', '0'), fps, size)
-	for item in filelist:
-		if item.endswith('.png'): 
-			item = path + item
-			print(item)
-			img = cv2.imread(item)
-			video.write(img)
+def image_to_video(twitterUsr):
+  fileName = "img/" + twitterUsr + "%01d" + ".png"
+  normalVideo = "output/" + twitterUsr + "normal.avi"
+  betterVideo = "output/" + twitterUsr + "better.mp4"  
+  subprocess.call(['ffmpeg', '-framerate', '0.3', '-i', 
+    fileName, 
+    normalVideo])
+  subprocess.call(['ffmpeg', '-i', normalVideo, '-c:a', 'copy', 
+    '-c:v', 'copy', '-r', '30', '-s', 'hd720', '-b:v', '2M', 
+    betterVideo])
