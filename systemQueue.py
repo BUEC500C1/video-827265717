@@ -1,5 +1,5 @@
 import queue
-from tweepy_get import tweepy_get
+from tweepy import tweepy_get
 from image2video import image_to_video
 import multiprocessing
 import time
