@@ -1,6 +1,5 @@
 import tweepy
 import re
-from PIL import Image, ImageDraw, ImageFont
 import os
 import os.path
 import configparser
@@ -10,6 +9,8 @@ def tweepy_get(keyword):
 	config.read('keys')
 	auth = tweepy.OAuthHandler(config.get('auth', 'consumer_key').strip(), config.get('auth', 'consumer_secret').strip())
 	auth.set_access_token(config.get('auth', 'access_token').strip(), config.get('auth', 'access_token_secret').strip())  
+	
+	# get author API
 	api = tweepy.API(auth)
 
 	search_results = api.user_timeline(keyword)
